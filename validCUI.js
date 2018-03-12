@@ -5,7 +5,6 @@
             let sum = 0;
             let keyTest = ['2', '3', '5', '7', '1', '2', '3', '5', '7'];
             if (reverseCui.length > 10 || reverseCui.length < 4) {
-                toastr.error('Lungime CUI gresit');
                 return false;
             }
             for (let i = 0; i < reverseCui.length; i++) {
@@ -16,7 +15,6 @@
                 sum = 0;
             }
             if (control != sum) {
-                toastr.error('CUI gresit');
                 return false;
             }
             return true;
